@@ -9,6 +9,6 @@ jobs:
     - name: Run Nuclei
       uses: projectdiscovery/nuclei-action@v2.0.1
       with:
-        target: "https://volopayassignment.vercel.app/"
+        target: "https://test-vulnerble.vercel.app/"
         github-report: true
         github-token: ${{ secrets.GITHUB_TOKEN }}

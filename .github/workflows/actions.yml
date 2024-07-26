@@ -1,0 +1,14 @@
+name: CI
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run Nuclei
+      uses: projectdiscovery/nuclei-action@v2.0.1
+      with:
+        target: "https://volopayassignment.vercel.app/"
+        github-report: true
+        github-token: ${{ secrets.GITHUB_TOKEN }}

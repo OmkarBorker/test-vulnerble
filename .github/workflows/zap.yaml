@@ -1,9 +1,9 @@
 on: [push]
 
 jobs:
-      zap_scan:
-           runs-on: ubuntu-latest
-           name: Scan the web application
+  zap_scan:
+    runs-on: ubuntu-latest
+    name: Scan the web application
     steps:
       - name: Checkout
         uses: actions/checkout@v2

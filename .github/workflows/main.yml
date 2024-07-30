@@ -10,6 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:     
     - name: OWASP ZAP Baseline Scan
-      uses: zaproxy/action-baseline@v0.3.0
+      uses: zaproxy/action-baseline@v0.12.0
       with:
-        target: "https://your-website.com/"
+        target: "https://test-vulnerble-dxl7dp790-omkarborkers-projects.vercel.app/"

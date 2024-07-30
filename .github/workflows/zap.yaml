@@ -12,4 +12,4 @@ jobs:
       - name: ZAP Scan
         uses:  zaproxy/action-full-scan@v0.10.0
         with:
-          target: 'https://www.zaproxy.org/'
+          target: 'https://test-vulnerble-dxl7dp790-omkarborkers-projects.vercel.app/'

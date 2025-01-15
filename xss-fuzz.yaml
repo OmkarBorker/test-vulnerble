@@ -74,7 +74,7 @@ http:
         part: body
         condition: or
         words:
-          - "<title>Access Denied</title>"
+          - "<title>Access Denied test</title>"
           - "You don't have permission to access"
         negative: true
 # digest: 490a0046304402200be153c1a8494ace096bf16d2337bc99346d87d85e5b5433971cb6c32135f40a022070fd981383ecad6b4598f49f730cf4006e167699f018fd3822c184c08e7d8336:922c64590222798bb761d5b6d8e72950

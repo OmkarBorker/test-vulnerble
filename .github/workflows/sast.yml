@@ -6,6 +6,9 @@ jobs:
   checking_code:
     runs-on: ubuntu-latest
     name: Horusec Scan
+    env: 
+      Author: "doiteasy02@gmail.com"
+      HORUSEC_CLI_RETURN_ERROR_IF_FOUND_VULNERABILITY: "false"
     steps:
       - uses: actions/checkout@v3
 

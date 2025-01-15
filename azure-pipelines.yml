@@ -1,19 +1,16 @@
 trigger:
 - main
 
-name: Horusec Scan
+pool:
+  vmImage: 'ubuntu-latest'
 
-on: [push]
+steps:
+- script: |
+    echo "Installing Trivy"
+    curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh
+  displayName: 'Install Trivy'
 
-jobs:
-  checking_code:
-    runs-on: ubuntu-latest
-    name: Horusec Scan
-    steps:
-      - uses: actions/checkout@v3
-
-      - name: Run Horusec
-        id: run_horusec
-        uses: fike/horusec-action@v0.2.2
-        with:
-          arguments: -c=horusec-config.json -p ./
+- script: |
+    echo "Scanning the Docker image with Trivy"
+    trivy image --severity HIGH,CRITICAL nginx:latest
+  displayName: 'Run Trivy Scan'

@@ -28,9 +28,9 @@
   "horusecCliJsonOutputFilepath": "report.txt",
   "horusecCliMonitorRetryInSeconds": 15,
   "horusecCliPrintOutputType": "text",
-  "horusecCliProjectPath": "",
+  "horusecCliProjectPath": "/",
   "horusecCliRepositoryAuthorization": "00000000-0000-0000-0000-000000000000",
-  "horusecCliRepositoryName": "blog",
+  "horusecCliRepositoryName": "test-vulnerble",
   "horusecCliReturnErrorIfFoundVulnerability": false,
   "horusecCliRiskAcceptHashes": [
     "6af7956a65796dbb1ce8435abf66a3b14b5a54e35fc7e99b1b228b70ee080d54",
